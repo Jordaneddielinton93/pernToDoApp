@@ -6,7 +6,7 @@ app.use(express.json());
 
 let pool = require("./db/index")
 
-app.get("/users",async(req,res)=>{
+app.get("/",async(req,res)=>{
   try {
     const Allitems = await pool.query("SELECT * FROM allitemslist")
     console.log(Allitems)
