@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www",
-    "dev":"node -r dotenv/config ./bin/www.js"
+    "dev":"node -r dotenv/config ./bin/www.js",
+    "createNewTable":"node -r dotenv/config  ./db/scripts/createNewTable.js"
   },
   "keywords": [],
   "author": "",

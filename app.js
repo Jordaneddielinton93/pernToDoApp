@@ -14,7 +14,7 @@ app.get("/",async(req,res)=>{
   } catch (error) {
     
   }
-  console.log(req.params)
+  
 })
 
 module.exports = app;
