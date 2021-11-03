@@ -1,11 +1,7 @@
 let {Pool} = require("pg")
 
 let pool = new Pool({
-  user:"postgres",
-  password:"Jordanl1352",
-  host:"localhost",
-  port:5432,
-  database:"store"
-}
+  connectionString:process.env.DATABASE_URL
+  }
 )
 module.exports = pool
